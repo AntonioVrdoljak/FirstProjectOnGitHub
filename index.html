@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Github Hub</title> 
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="container">
+    <header>
+            <nav>
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                        <li><a href="/About">About</a></li>
+                    </ul>
+                </nav>
+        <div><img src="img/logo-ex.png" class="img_header" alt="None"></div> 
+        <p>This is a site to search Github for interesting projects.</p>
+        
+    </header>
+    <section id="mid">
+        <p>In this <em>simple site</em>, we"ll show a list of <a href="https://github.com/">Github</a>
+        projects and the data about <b>those projects</b>.</p>
+        <form action="http://wilder.azurewebsites.net/echo" method="POST" class="simple-forms" id="gitHubSearchForm">
+            <label for="VarSrc">Search:</label>
+            <input type="text" name="VarSrc" id="VarSrc"><br>
+            <input type="checkbox" id="checkbox" name="box" checked="true" >
+            <label for="checkbox">Use star?</label><br>
+            <label for="language">Language:</label>
+            <select name="Selected" id="language">
+                <option >All</option>
+                <option >Java</option>
+                <option >C#</option>
+                <option >JavaScript</option>
+            </select><br>
+            <input type="submit" value="Search">
+        </form>
+        <div class="result" id="result">
+            <button id="buttON">Hide</button>
+            <div class="resultList" id="resultList"></div>
+        </div>
+        
+    </section>
+    <footer>
+       <center>&copy; Autorska prava 2019</center> 
+    </footer>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
